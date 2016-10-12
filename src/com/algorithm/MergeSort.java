@@ -40,6 +40,7 @@ public class MergeSort {
             while(j < end + 1){
                 tempArr[z] = array[j];
                 j++;
+                z++;
             }
         }
         for(i = 0;i < end + 1 - start;i++){
@@ -47,7 +48,7 @@ public class MergeSort {
         }
     }
     public static void main (String[] args){
-        int[] array = {23,342,54,23,5,6,45,56,73,2,4,636,34};
+        int[] array = {23,10,54,254,5,6,45,56,73,2,4,636,34};
         sort(array,0,array.length-1);
         for(int i = 0;i<array.length;i++){
             System.out.println(array[i]);
