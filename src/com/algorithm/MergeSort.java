@@ -9,7 +9,7 @@ public class MergeSort {
         if(array.length < 2){
             return;
         }
-        int mid = (int)Math.floor((start + end) / 2);
+        int mid = (start + end) / 2;
         if(start < mid){
             sort(array,start,mid);
         }
